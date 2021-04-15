@@ -82,6 +82,6 @@ int main(void)
     	I2C_Init();
 	start = I2C_Start(0xEE);
             data = I2C_Read_Ack();
-            If (data != ‘0’)
+            If (data != '0')
 blink_led();
 }
