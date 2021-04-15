@@ -77,11 +77,11 @@ void blink_led ()
 
 int main(void)
 {
-            int start;
+        int start;
 	Char data;
     	I2C_Init();
 	start = I2C_Start(0xEE);
-            data = I2C_Read_Ack();
-            If (data != '0')
-blink_led();
+        data = I2C_Read_Ack();
+        If (data != '0')
+	blink_led();
 }
