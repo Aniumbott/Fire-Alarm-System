@@ -26,11 +26,11 @@ Fire Alarm System Project
 ## Details
 Fire alarm system detects increase in temperature, and presence of smoke to detect the presence of fire and warn by buzzers and LEDs ( also by sending messages - by using GSM module). These sensors are fixed in different zones and all are wired to the Main Control Unit (MCU), such that we can pinpoint the zone which has caught fire.
 
-# Advantages
+## Advantages
 Placement Flexibility
 24/7 Monitoring
 Easy & Affordable
 
-# Disadvantages
+## Disadvantages
 Very sensitive
 Use of radioactive material
