@@ -14,13 +14,13 @@ void USART_init(long USART_BAUDRATE)
 		UBRRL = BAUD_PRESCALE;			
 		UBRRH = (BAUD_PRESCALE >> 8);		
 }
-void usart_tx(char x)
+void uart_tx(char x)
 {
 	
 		while (! (UCSRA & (1 << UDRE)) );
 		UDR = x;
 }
-void usart_msg(char c[])
+void uart_msg(char c[])
 {
 		int i = 0;
 		for ( i=0; i < strlen(c); i++)
@@ -31,9 +31,9 @@ void usart_msg(char c[])
 int main (void)
 {
 		int a=13;
-		USART_init(9600);
+		UART_init(9600);
 		_delay_ms(1000);
-		usart_msg("AT\r");
+		uart_msg("AT\r");
 		_delay_ms(1000);
 
 }
