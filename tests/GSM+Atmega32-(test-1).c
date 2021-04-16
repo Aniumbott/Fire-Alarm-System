@@ -1,4 +1,4 @@
-//Programe 
+//Programe to test UART transmission between Atmega32 and SIM900D 
 #define F_CPU 8000000UL		
 #include <string.h>
 #define BAUD_PRESCALE (((F_CPU / (9600 * 16UL))) - 1)
