@@ -38,30 +38,35 @@ int main (void)
 	while (1)
 	{
 		if (bit_is_set(PINA,0))
+		{
 			uart_msg("AT\r");
 			_delay_ms(500);
 			uart_msg ("AT+CMGF=1\r");
 			_delay_ms(500);
 			uart_msg ("AT+CMGS =  +91 6354129548\rSmoke Detected.\x1A");
 		break;
+		}
 		
 	
 		else if (bit_is_set(PINC,0))
+		{
 			uart_msg("AT\r");
 			_delay_ms(500);
 			uart_msg ("AT+CMGF=1\r");
 			_delay_ms(500);
 			uart_msg ("AT+CMGS =  +91 6354129548\rRise in the temprature is observed.\x1A");
 		break;
+		}
 	
 		
-		else if (bit_is_set(PINA,0))&&(bit_is_set(PINC,0))
+		else if ((bit_is_set(PINA,0))&&(bit_is_set(PINC,0)))
+		{
 			uart_msg("AT\r");
 			_delay_ms(500);
 			uart_msg ("AT+CMGF=1\r");
 			_delay_ms(500);
 			uart_msg ("AT+CMGS =  +91 6354129548\rFire is Detected.\x1A");
 		break;
-		
+		}
 	}
 }
