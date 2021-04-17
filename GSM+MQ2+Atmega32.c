@@ -18,7 +18,6 @@ void UART_init(long UART_BAUDRATE)
 
 void uart_tx(char x)
 {
-	// Wait until the Transmitter is ready
 	while (! (UCSRA & (1 << UDRE)) );
 	UDR = x;
 }
