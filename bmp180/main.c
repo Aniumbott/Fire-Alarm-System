@@ -15,10 +15,7 @@ int main(void)
 {
 	
     init_i2c();
-    init_usart();
-	SendString("Test bmp180 sensor. wait ...\n");
     init_bmp180();
-    SendString("Sensor is ready\n");
     while (1) 
     {
        make_data();
