@@ -52,7 +52,7 @@ while (1)
 	{
 		ADCSRA = ADCSRA | (1 << ADSC);
 		while(ADCSRA & (1 << ADSC));
-		if(ADCH > 51)
+		if(ADCH > 55)
 		{
 			b=1;
 		}
