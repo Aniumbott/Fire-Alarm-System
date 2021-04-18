@@ -18,7 +18,7 @@ Fire Alarm System Project
 
 ## Components & Softwares :
 1. Atmega32
-2. Bmp180
+2. TMP36
 3. Atmel Studio (to write the code)
 4. Proteus
 5. MQ2 gas-sensor
