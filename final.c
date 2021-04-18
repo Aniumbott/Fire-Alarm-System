@@ -57,7 +57,7 @@ while (1)
 			b=1;
 		}
 		
-		a = bit_is_set(PINC,0);
+		a = bit_is_set(PINA,1);
 
 		if ((a==1)&&(b==0)&&(a1==0))
 		{
