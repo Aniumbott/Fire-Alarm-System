@@ -19,9 +19,10 @@ Fire Alarm System Project
 ## Components & Softwares
 1. Atmega32
 2. TMP36
-3. Atmel Studio (to write the code)
-4. Proteus
-5. MQ2 gas-sensor
+3. SIM900A (GSM module)
+4. Atmel Studio (to write the code)
+5. Proteus
+6. MQ2 gas-sensor
 
 ## Required Libraries
 1. [GSM library](https://drive.google.com/uc?export=download&id=0B7JBaVsUuW-rallJMkFYWDFfa0U)
